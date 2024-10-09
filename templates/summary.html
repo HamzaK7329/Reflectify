@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reflectify - Weekly Summary</title>
+    <link rel="stylesheet" href="/static/summary.css">  
+</head>
+<body>
+    <div class="container">
+        <h1>Reflectify - Weekly Summary</h1>
+
+        <!-- Display the personalized recommendation based on the sentiment -->
+        <h2>Your Personalized Recommendation</h2>
+        <p>{{ recommendation }}</p>
+
+        <!-- Display the mood trend plot -->
+        <h2>Mood Trends Over the Past Week</h2>
+        <img src="{{ url_for('static', filename='mood_trend.png') }}" alt="Mood Trend Graph">
+
+        <!-- Weather and Mood Correlation -->
+        <h2>Weather and Mood Correlation</h2>
+        <ul>
+            {% for weather, avg_mood in weather_correlation.items() %}
+                <li>{{ weather.capitalize() }}: Average Mood = {{ avg_mood }}</li>
+            {% endfor %}
+        </ul>
+
+        <!-- Reflection Analysis (Most Common Emotion Words) -->
+        <h2>Most Common Emotion Words in Reflections</h2>
+        <ul>
+            {% for word, count in reflection_analysis %}
+                <li>'{{ word }}' appeared {{ count }} times</li>
+            {% endfor %}
+        </ul>
+
+        <!-- Back button to go back to mood input page -->
+        <a href="{{ url_for('index') }}">
+            <button class="summary_button">Log Another Mood</button>
+        </a>
+    </div>
+</body>
+</html>

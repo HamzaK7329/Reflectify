@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reflectify - Mood Tracker</title>
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+    <div class="flex-wrapper">
+        <div class="container">
+            <h1>Reflectify</h1>
+            <form method="POST">
+                <label for="mood_score">How's your mood today (1-10)?</label>
+                <select id="mood_score" name="mood_score" required>
+                    {% for i in range(1, 11) %}
+                        <option value="{{ i }}">{{ i }}</option>
+                    {% endfor %}
+                </select>
+
+                <label for="reflection">Any thoughts or reflections?</label>
+                <textarea id="reflection" name="reflection" required></textarea>
+
+                <input type="submit" value="Save Mood">
+            </form>
+            <a class="summary_anchor" href="{{ url_for('summary') }}"><button class="summary_button">View Mood Summary</button></a>
+        </div>
+    </div>
+</body>
+<footer class="footer">
+    <p>Developed with ♥ by <a href="https://github.com/HamzaK7329" target="_blank">Muhammad Hamza</a></p>
+</footer>
+</html>

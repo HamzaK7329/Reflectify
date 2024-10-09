@@ -1,0 +1,113 @@
+/* Google Font for modern typography */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f0f4f8;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Container to center content */
+.container {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    background-color: #fff;
+    border-radius: 12px;
+    padding: 30px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+/* Heading styling */
+h1, h2 {
+    color: #4f586e;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+h1 {
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+
+h2 {
+    font-size: 1.8rem;
+    font-weight: 500;
+    margin-top: 40px;
+}
+
+/* Mood Trend Graph */
+img {
+    display: block;
+    margin: 20px auto;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 800px;
+}
+
+/* Weather and Mood Correlation */
+.weather-section {
+    background-color: #e9f5ff;
+    border-radius: 12px;
+    padding: 20px;
+    margin-top: 30px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.weather-section ul {
+    padding: 0;
+    list-style-type: none;
+}
+
+.weather-section li {
+    padding: 10px;
+    background-color: #f7fbff;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+}
+
+/* Emotion Word Analysis */
+.emotion-section {
+    background-color: #fff5f5;
+    border-radius: 12px;
+    padding: 20px;
+    margin-top: 30px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.emotion-section ul {
+    padding: 0;
+    list-style-type: none;
+}
+
+.emotion-section li {
+    padding: 10px;
+    background-color: #ffecec;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    .container {
+        padding: 20px;
+    }
+
+    img {
+        max-width: 100%;
+    }
+}
