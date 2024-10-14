@@ -1,0 +1,165 @@
+/* Google Font for a modern, aesthetic text style */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+/* General styling for the entire page */
+body, html {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f0f4f8;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.flex-wrapper {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Center the container both vertically and horizontally */
+.container {
+    width: 100%;
+    max-width: 500px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Header styling */
+h1 {
+    font-size: 2.4rem;
+    font-weight: 600;
+    color: #4f586e;
+    margin-bottom: 25px;
+}
+
+/* Styling for form labels */
+label {
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #4f586e;
+    margin-bottom: 10px;
+    display: block;
+    text-align: center;
+    width: 100%;
+}
+
+/* Input fields and text area */
+textarea, select, input[type="submit"] {
+    font-size: 1rem;
+    padding: 12px;
+    margin: 12px 0;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: #f9f9f9;
+    transition: all 0.3s ease;
+}
+
+textarea {
+    resize: none;
+    height: 120px;
+    margin-bottom: 20px;
+}
+
+/* Input field hover and focus effects */
+textarea:focus, select:focus, input[type="submit"]:focus {
+    outline: none;
+    border-color: #6c63ff;
+}
+
+/* Stylish submit button */
+input[type="submit"] {
+    background: linear-gradient(135deg, #6c63ff 0%, #33bfff 100%);
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 15px 20px;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    width: 100%;
+    margin-top: 20px;
+}
+
+input[type="submit"]:hover {
+    background: linear-gradient(135deg, #33bfff 0%, #6c63ff 100%);
+    transform: scale(1.05);
+}
+
+.summary_button {
+    background: linear-gradient(135deg, #6c63ff 0%, #33bfff 100%);
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 15px 20px;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    width: 100%;
+    max-width: 360px;
+    font-size: medium;
+    margin-top: 20px;
+}
+
+.summary_button:hover {
+    background: linear-gradient(135deg, #33bfff 0%, #6c63ff 100%);
+    transform: scale(1.05);
+}
+
+.summary_anchor {
+    width: 100%;
+    max-width: 360px;
+}
+
+/* Make it responsive */
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    label {
+        font-size: 1rem;
+    }
+
+    textarea, select, input[type="submit"] {
+        font-size: 0.9rem;
+    }
+}
+
+.footer {
+    width: 100%;
+    text-align: center;
+    color: #777;
+    font-size: 1rem;
+    padding: 20px;
+    background-color: #f0f4f8;
+    border-top: 1px solid #ddd;
+    position: relative;
+}
+
+.footer a {
+    color: #6c63ff;
+    text-decoration: none;
+}
+
+.footer a:hover{
+    text-decoration: underline;
+}
